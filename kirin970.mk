@@ -75,6 +75,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Vendor Properties Overrides
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.vendor.override.security_patch=$(PLATFORM_SECURITY_PATCH) \
+    ro.vendor.override.build_display=$(BUILD_ID)
+
 # Recovery
 PRODUCT_PACKAGES += \
     resize2fs_static
