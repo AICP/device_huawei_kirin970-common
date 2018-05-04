@@ -6,6 +6,3 @@ allow system_server display_engine_service:service_manager find;
 
 allow system_server shell_prop:property_service set;
 
-# Allow system server to change fingerprint nav properties
-allow system_server sys_fpnav_enabled_prop:property_service set;
-
