@@ -110,3 +110,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     vndk-sp
+
+PRODUCT_PACKAGES += \
+    OneplusThreeDoze
