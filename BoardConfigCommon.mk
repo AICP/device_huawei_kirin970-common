@@ -61,10 +61,6 @@ TARGET_USES_HWC2 := true
 TARGET_INIT_VENDOR_LIB := libinit_kirin970
 TARGET_RECOVERY_DEVICE_MODULES := libinit_kirin970
 
-# Lineage hardware
-JAVA_SOURCE_OVERLAYS := \
-    org.lineageos.hardware|$(VENDOR_PATH)/lineagehw|**/*.java
-
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -103,8 +99,3 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/public
 ifneq ($(TARGET_BUILD_VARIANT),user)
 SELINUX_IGNORE_NEVERALLOWS := true
 endif
-
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    /system/lib64/libdisplayengineservice.so|libshims_hwsmartdisplay_jni.so \
-    /system/lib64/libhwsmartdisplay_jni.so|libshims_hwsmartdisplay_jni.so
