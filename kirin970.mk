@@ -71,6 +71,3 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     resize2fs_static
 
-# Shims
-PRODUCT_PACKAGES += \
-    libshims_hwsmartdisplay_jni
