@@ -1,0 +1,5 @@
+allow system_app aptouch_daemon_prop:file { read write open };
+allow system_app armnn_property:file { read write open };
+allow system_app bastet_prop:file { read write open };
+allow system_app boot_odm_conn_chiptype_prop:file { read write open };
+
