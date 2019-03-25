@@ -33,7 +33,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Camera2
+    SnapdragonCamera
 
 # Device init scripts
 PRODUCT_PACKAGES += \
