@@ -29,3 +29,5 @@ allow init sysfs_led:file setattr;
 
 # Allow init to mount adbd binary
 allow init rootfs:file mounton;
+allow init tmpfs:lnk_file create;
+
