@@ -12,3 +12,4 @@ allow system_server sysfs_zram:lnk_file rw_file_perms;
 
 # Allow system_server to read inside /sys
 allow system_server sysfs:file r_file_perms;
+allow system_server default_android_hwservice:hwservice_manager find;
